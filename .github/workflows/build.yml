@@ -19,7 +19,7 @@ jobs:
         with:
           gradle-version: current
           arguments: assembleRelease
-      - uses: r0adkll/sign-android-release@2
+      - uses: r0adkll/sign-android-release@1
         id: sign_app
         with:
           releaseDirectory: app/build/outputs/apk/release
