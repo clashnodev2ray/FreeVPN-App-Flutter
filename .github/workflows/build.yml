@@ -15,11 +15,11 @@ jobs:
         with:
           distribution: temurin
           java-version: 18
-      - uses: gradle/gradle-build-action@v2
+      - uses: gradle/gradle-build-action@v4
         with:
           gradle-version: current
           arguments: assembleRelease
-      - uses: r0adkll/sign-android-release@v1
+      - uses: r0adkll/sign-android-release@4
         id: sign_app
         with:
           releaseDirectory: app/build/outputs/apk/release
