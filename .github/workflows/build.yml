@@ -66,12 +66,7 @@ jobs:
           echo "keyPassword=${{ secrets.KEY_PASSWORD }}" >> android/local.properties
 
 
-      - name: Setup Go
-        uses: actions/setup-go@v5
-        with:
-          go-version-file: 'core/go.mod'
-          cache-dependency-path: |
-            core/go.sum
+     
 
       - name: Setup Flutter
         uses: subosito/flutter-action@v2
