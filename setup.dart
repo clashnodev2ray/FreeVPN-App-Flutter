@@ -98,7 +98,7 @@ class Build {
         ),
       ];
 
-  static String get appName => "FlClash";
+  static String get appName => "freeVpn";
 
   static String get libName => "libclash";
 
